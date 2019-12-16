@@ -38,6 +38,8 @@ bind c:ctrl;alt;cmd		move (screenSizeX-windowSizeX)/2;(screenSizeY-windowSizeY)/
 bind m:ctrl;alt;cmd		push left bar-resize:screenSizeX
 
 # Throw Bindings
+bind n:ctrl;alt;cmd         throw next
+bind p:ctrl;alt;cmd         throw prev
 bind 1:ctrl;alt         throw 0
 bind 2:ctrl;alt         throw 1
 bind 3:ctrl;alt         throw 2
