@@ -1,0 +1,64 @@
+# Slate script for HHKB
+
+config defaultToCurrentScreen true
+config nudgePercentOf screenSize
+config resizePercentOf screenSize
+
+# Resize Bindings
+bind ':ctrl;shift;alt       resize +10% +0
+bind ;:ctrl;shift;alt        resize -10% +0
+bind -:ctrl;shift;alt          resize +0   -10%
+bind =:ctrl;shift;alt        resize +0   +10%
+bind right:ctrl;shift;alt       resize +10% +0
+bind left:ctrl;shift;alt        resize -10% +0
+bind up:ctrl;shift;alt          resize +0   -10%
+bind down:ctrl;shift;alt        resize +0   +10%
+
+bind -:shift;alt;cmd        resize -10%   -10%
+bind =:shift;alt;cmd        resize +10%   +10%
+
+# Push Bindings
+bind ':shift;alt		push right bar-resize:screenSizeX/3
+bind ;:shift;alt		push left  bar-resize:screenSizeX/3
+bind ':alt;cmd		push right bar-resize:screenSizeX/3*2
+bind ;:alt;cmd		push left  bar-resize:screenSizeX/3*2
+bind ':shift;alt;cmd	push right	bar-resize:screenSizeX/2
+bind ;:shift;alt;cmd	push left	bar-resize:screenSizeX/2
+bind [:shift;alt;cmd	push up		bar-resize:screenSizeY/2
+bind /:shift;alt;cmd	push down	bar-resize:screenSizeY/2
+# bind right:shift;alt		push right bar-resize:screenSizeX/3
+# bind left:shift;alt		push left  bar-resize:screenSizeX/3
+bind right:alt;cmd		push right bar-resize:screenSizeX/3*2
+bind left:alt;cmd		push left  bar-resize:screenSizeX/3*2
+bind right:shift;alt;cmd	push right	bar-resize:screenSizeX/2
+bind left:shift;alt;cmd	push left	bar-resize:screenSizeX/2
+# bind up:shift;alt;cmd	push up		bar-resize:screenSizeY/2
+# bind down:shift;alt;cmd	push down	bar-resize:screenSizeY/2
+
+# Nudge Bindings
+bind ':ctrl;cmd nudge +10% +0
+bind ;:ctrl;cmd  nudge -10% +0
+bind [:ctrl;cmd    nudge +0   -10%
+bind /:ctrl;cmd  nudge +0   +10%
+bind right:ctrl;cmd nudge +10% +0
+bind left:ctrl;cmd  nudge -10% +0
+bind up:ctrl;cmd    nudge +0   -10%
+bind down:ctrl;cmd  nudge +0   +10%
+
+# Move to center
+bind c:shift;alt;cmd		move screenOriginX+(screenSizeX-windowSizeX)/2;screenOriginY+(screenSizeY-windowSizeY)/2 windowSizeX;windowSizeY
+
+# Full screen
+bind m:shift;alt;cmd		push left bar-resize:screenSizeX
+bind f:shift;alt;cmd		move screenOriginX;screenOriginY screenSizeX;screenSizeY
+
+# Throw Bindings
+bind n:shift;alt;cmd         throw next
+bind p:shift;alt;cmd         throw prev
+# bind n:shift;alt;cmd         throw right
+# bind p:shift;alt;cmd         throw left
+bind 1:shift;alt;cmd         throw 0
+bind 2:shift;alt;cmd         throw 1
+bind 3:shift;alt;cmd         throw 2
+bind 4:shift;alt;cmd         throw 3
+
