@@ -1,4 +1,4 @@
-# Slate script for HHKB
+# JB's Slate script for HHKB
 
 config defaultToCurrentScreen true
 config nudgePercentOf screenSize
@@ -62,3 +62,5 @@ bind 2:shift;alt;cmd         throw 1
 bind 3:shift;alt;cmd         throw 2
 bind 4:shift;alt;cmd         throw 3
 
+# Window Hints
+bind esc:cmd hint
