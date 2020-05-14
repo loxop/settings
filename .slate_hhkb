@@ -20,8 +20,12 @@ bind =:shift;alt;cmd        resize +10%   +10%
 # Push Bindings
 bind ':shift;alt		push right bar-resize:screenSizeX/3
 bind ;:shift;alt		push left  bar-resize:screenSizeX/3
+bind [:shift;alt		push up bar-resize:screenSizeY/3
+bind /:shift;alt		push down  bar-resize:screenSizeY/3
 bind ':alt;cmd		push right bar-resize:screenSizeX/3*2
 bind ;:alt;cmd		push left  bar-resize:screenSizeX/3*2
+bind [:alt;cmd		push up bar-resize:screenSizeY/3*2
+bind /:alt;cmd		push down  bar-resize:screenSizeY/3*2
 bind ':shift;alt;cmd	push right	bar-resize:screenSizeX/2
 bind ;:shift;alt;cmd	push left	bar-resize:screenSizeX/2
 bind [:shift;alt;cmd	push up		bar-resize:screenSizeY/2

@@ -23,8 +23,12 @@ bind /:ctrl;shift;alt        resize +0   +10%
 # Push Bindings
 bind right:ctrl;alt		push right bar-resize:screenSizeX/3
 bind left:ctrl;alt		push left  bar-resize:screenSizeX/3
+bind up:ctrl;alt		push right bar-resize:screenSizeY/3
+bind down:ctrl;alt		push left  bar-resize:screenSizeY/3
 bind right:alt;cmd		push right bar-resize:screenSizeX/3*2
 bind left:alt;cmd		push left  bar-resize:screenSizeX/3*2
+bind up:alt;cmd		push right bar-resize:screenSizeY/3*2
+bind down:alt;cmd		push left  bar-resize:screenSizeY/3*2
 bind right:ctrl;alt;cmd	push right	bar-resize:screenSizeX/2
 bind left:ctrl;alt;cmd	push left	bar-resize:screenSizeX/2
 bind up:ctrl;alt;cmd	push up		bar-resize:screenSizeY/2
