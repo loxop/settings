@@ -7,8 +7,8 @@ config resizePercentOf screenSize
 # Resize Bindings
 bind ':ctrl;shift;alt       resize +10% +0
 bind ;:ctrl;shift;alt        resize -10% +0
-bind -:ctrl;shift;alt          resize +0   -10%
-bind =:ctrl;shift;alt        resize +0   +10%
+bind [:ctrl;shift;alt          resize +0   -10%
+bind /:ctrl;shift;alt        resize +0   +10%
 bind right:ctrl;shift;alt       resize +10% +0
 bind left:ctrl;shift;alt        resize -10% +0
 bind up:ctrl;shift;alt          resize +0   -10%
