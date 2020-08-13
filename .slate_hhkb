@@ -39,6 +39,11 @@ bind left:shift;alt;cmd	push left	bar-resize:screenSizeX/2
 # bind up:shift;alt;cmd	push up		bar-resize:screenSizeY/2
 # bind down:shift;alt;cmd	push down	bar-resize:screenSizeY/2
 
+bind a:shift;alt;cmd		move screenOriginX;screenOriginY screenSizeX/2;screenSizeY/2
+bind s:shift;alt;cmd		move screenOriginX+screenSizeX/2;screenOriginY screenSizeX/2;screenSizeY/2
+bind z:shift;alt;cmd		move screenOriginX;screenOriginY+screenSizeY/2 screenSizeX/2;screenSizeY/2
+bind x:shift;alt;cmd		move screenOriginX+screenSizeX/2;screenOriginY+screenSizeY/2 screenSizeX/2;screenSizeY/2
+
 # Nudge Bindings
 bind ':ctrl;cmd nudge +10% +0
 bind ;:ctrl;cmd  nudge -10% +0
