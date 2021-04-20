@@ -18,11 +18,19 @@ module.exports = {
             browser: "Google Chrome"
         },
         {
+            match: finicky.matchHostnames([/.*\.github.com$/]),
+            browser: "Google Chrome"
+        },
+        {
             match: finicky.matchHostnames([/.*\.quip.com$/]),
             browser: "Google Chrome"
         },
         {
             match: finicky.matchHostnames([/(docs|meet|drive|calendar).google.com$/]),
+            browser: "Google Chrome"
+        },
+        {
+            match: /^https:\/\/www\.google\.com\/calendar\/.*$/,
             browser: "Google Chrome"
         },
         {
