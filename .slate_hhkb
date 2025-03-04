@@ -39,10 +39,31 @@ bind left:shift;alt;cmd	push left	bar-resize:screenSizeX/2
 # bind up:shift;alt;cmd	push up		bar-resize:screenSizeY/2
 # bind down:shift;alt;cmd	push down	bar-resize:screenSizeY/2
 
+# 1/4 push
 bind a:shift;alt;cmd		move screenOriginX;screenOriginY screenSizeX/2;screenSizeY/2
 bind s:shift;alt;cmd		move screenOriginX+screenSizeX/2;screenOriginY screenSizeX/2;screenSizeY/2
 bind z:shift;alt;cmd		move screenOriginX;screenOriginY+screenSizeY/2 screenSizeX/2;screenSizeY/2
 bind x:shift;alt;cmd		move screenOriginX+screenSizeX/2;screenOriginY+screenSizeY/2 screenSizeX/2;screenSizeY/2
+
+# 1/8 push for Vertical
+bind 1:shift;alt;cmd;ctrl	move screenOriginX;screenOriginY screenSizeX/2;screenSizeY/4
+bind 2:shift;alt;cmd;ctrl	move screenOriginX+screenSizeX/2;screenOriginY screenSizeX/2;screenSizeY/4
+bind q:shift;alt;cmd;ctrl	move screenOriginX;screenOriginY+screenSizeY/4 screenSizeX/2;screenSizeY/4
+bind w:shift;alt;cmd;ctrl	move screenOriginX+screenSizeX/2;screenOriginY+screenSizeY/4 screenSizeX/2;screenSizeY/4
+bind a:shift;alt;cmd;ctrl	move screenOriginX;screenOriginY+screenSizeY/2 screenSizeX/2;screenSizeY/4
+bind s:shift;alt;cmd;ctrl	move screenOriginX+screenSizeX/2;screenOriginY+screenSizeY/2 screenSizeX/2;screenSizeY/4
+bind z:shift;alt;cmd;ctrl	move screenOriginX;screenOriginY+screenSizeY/4*3 screenSizeX/2;screenSizeY/4
+bind x:shift;alt;cmd;ctrl	move screenOriginX+screenSizeX/2;screenOriginY+screenSizeY/4*3 screenSizeX/2;screenSizeY/4
+
+# 1/8 push for Horizontal
+bind d:shift;alt;cmd;ctrl	move screenOriginX;screenOriginY screenSizeX/4;screenSizeY/2
+bind f:shift;alt;cmd;ctrl	move screenOriginX+screenSizeX/4;screenOriginY screenSizeX/4;screenSizeY/2
+bind g:shift;alt;cmd;ctrl	move screenOriginX+screenSizeX/2;screenOriginY screenSizeX/4;screenSizeY/2
+bind h:shift;alt;cmd;ctrl	move screenOriginX+screenSizeX/4*3;screenOriginY screenSizeX/4;screenSizeY/2
+bind c:shift;alt;cmd;ctrl	move screenOriginX;screenOriginY+screenSizeY/2 screenSizeX/4;screenSizeY/2
+bind v:shift;alt;cmd;ctrl	move screenOriginX+screenSizeX/4;screenOriginY+screenSizeY/2 screenSizeX/4;screenSizeY/2
+bind b:shift;alt;cmd;ctrl	move screenOriginX+screenSizeX/2;screenOriginY+screenSizeY/2 screenSizeX/4;screenSizeY/2
+bind n:shift;alt;cmd;ctrl	move screenOriginX+screenSizeX/4*3;screenOriginY+screenSizeY/2 screenSizeX/4;screenSizeY/2
 
 # Nudge Bindings
 bind ':ctrl;cmd nudge +10% +0
